@@ -55,7 +55,7 @@ import { ComentarioEmpresaPage } from '../pages/comentario-empresa/comentario-em
     GooglePlaceModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyChAXl2P7RdgLW55FdpS9vcS4w19vZrE0o'
+      apiKey: 'coloquesuaapikeyaqui'
     })
   ],
   bootstrap: [IonicApp],
