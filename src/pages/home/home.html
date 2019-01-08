@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><ion-icon name="person"></ion-icon> {{mensagem}}, {{nameUser}}.</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <agm-map [minZoom]="17" [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)" [styles]="styles">
+    <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+  </agm-map>
+</ion-content>

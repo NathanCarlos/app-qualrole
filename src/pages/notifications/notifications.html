@@ -1,0 +1,35 @@
+<!--
+  Generated template for the NotificationsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Notificações</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-button class="clearButton">
+      <ion-item-divider color="light" (click)="reload()">
+        <ion-icon name="megaphone" item-start></ion-icon>Atualizar Notificações
+      </ion-item-divider>
+    </button>
+
+    <ion-card *ngFor="let notification of notifications" (click)="comentario(notification)">
+      <ion-card-header>
+        <h3>{{ notification.NOME_EVENTO }}</h3>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{ notification.DESCRICAO_EVENTO }}</p>
+        <ion-item>
+          <ion-label>Data</ion-label>
+          <ion-datetime displayFormat="DD/MM/YYYY" disabled="" [ngModelOptions]="{standalone: true}" [(ngModel)]="notification.DT_INICIO_EVENTO"></ion-datetime>
+        </ion-item>
+        <p>Horário: {{ notification.HORA_INICIO_EVENTO }}h</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
