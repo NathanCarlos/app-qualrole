@@ -3,5 +3,5 @@ Aplicativo feito em ionic 3 para o meu trabalho de conclusão de curso do técni
 
 * Baixe a api no link: https://github.com/NathanCarlos/apiqualrole e siga as instruções no readme.md
 * Baixe o repositório e tenha o ionic 3 instalado, de npm install.
-* Coloque sua api key no app.module.ts, no campo indicado.
+* Coloque sua api key(do google maps) no app.module.ts, no campo indicado.
 * Dê o comando ionic serve.
